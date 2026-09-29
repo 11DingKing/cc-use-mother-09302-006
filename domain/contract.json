@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "学生互动轮转排队",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804947.html",
+  "actors": [
+    "班主任",
+    "学生",
+    "活动志愿者"
+  ],
+  "states": [
+    "报名",
+    "排队",
+    "递补",
+    "签到",
+    "完成"
+  ],
+  "invariants": [
+    "公平排序",
+    "原子递补",
+    "隐私裁剪",
+    "跨场次转移"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09302-006-A",
+      "actor": "班主任",
+      "state": "报名"
+    },
+    {
+      "case_id": "09302-006-B",
+      "actor": "活动志愿者",
+      "state": "排队"
+    }
+  ],
+  "tags": [
+    "student-queue",
+    "fair-allocation"
+  ]
+}
