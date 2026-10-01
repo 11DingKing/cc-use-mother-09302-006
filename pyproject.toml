@@ -1,6 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "domain-contract-09302-006"
-version = "0.1.0"
-description = "学生互动轮转排队的领域约定与校验工具"
+version = "0.2.0"
+description = "学生互动轮转排队的领域约定、校验工具与确定性排队后端"
 requires-python = ">=3.11"
 dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
